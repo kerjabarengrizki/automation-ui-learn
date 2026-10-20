@@ -9,6 +9,11 @@
 -->
 <suite name="WebAutomationSuite" parallel="methods" thread-count="3">
 
+    <!-- ExtentReports lifecycle + screenshot-on-failure. -->
+    <listeners>
+        <listener class-name="core.TestListener"/>
+    </listeners>
+
     <!-- Default browser for every test; overridable per <test> block below. -->
     <parameter name="browser" value="chrome"/>
 

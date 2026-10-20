@@ -51,14 +51,18 @@ On Windows use `gradlew.bat test`.
 
 ### Viewing Results
 
-After a run, TestNG/Gradle reports are generated under:
+After a run, reports and logs are generated under:
 
 ```
-build/reports/tests/test/index.html   # Gradle HTML report
+build/reports/extent/index.html       # ExtentReports HTML report (custom)
+build/reports/tests/test/index.html   # Gradle/TestNG HTML report
 build/test-results/test/              # Raw XML results
+logs/automation.log                   # Log4j2 run log (rotated)
 ```
 
-Open the HTML report in a browser to inspect passed/failed/skipped tests.
+Open `build/reports/extent/index.html` for the rich Extent report — it shows
+each test's steps, pass/fail status, system info, and a **screenshot captured
+automatically on failure**.
 
 ## How It Works
 

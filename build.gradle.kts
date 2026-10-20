@@ -20,6 +20,7 @@ dependencies {
 
 
     testImplementation("org.testng:testng:7.10.2")
+    testImplementation("com.aventstack:extentreports:5.1.2")
 }
 
 
